@@ -1,0 +1,36 @@
+{
+  "authoritative": true,
+  "role_intents": {
+    "role.adapter_author": "24b1d4b9ca4e0ce8a2b0fa9eb1fb24a9634c5d215d326d9c7ce416fade08fe4c",
+    "role.coordinator": "2eac6c55b07ef6c2fbdc70781714ab88045786f06fd05b5d13f9266d3980ee9f",
+    "role.evaluation_designer": "00e6904518499003a8ddf7812fa3653000f45acb8ac2b97cacda18227deb9f41",
+    "role.evidence_reviewer": "204bbbb661eb469fb103d77f4cbc4e2da2b681e67f30d10c4a6a64d392d7b253",
+    "role.executor": "a323de541dc6eb2af80d0900504132267f0935de618433a8c6aa665677e7ec43",
+    "role.improver": "1b9c5713c797511deffbf241680f8f2f508b618c77aa0525600887c3d092b52f",
+    "role.planner": "c05d6c8c2cb6d89150bdbe973360112817e231fe8e758c5bd2bbb0679e6da0f9",
+    "role.researcher": "7b8406a5ee90dcf55ceb8e958e9fdb0e83f489c53b7ed7ba9cfa55f76812b99f",
+    "role.skill_author": "98e674c27f7ca2c41d10eaae5b8f31a4a385338c9bdc650517177ee79817f166",
+    "role.verifier": "c35378985d53577706bad49fcdbe1c146a81953b6738bd5889091a94931f560a"
+  },
+  "role_intents_by_host": {
+    "codex": {
+      "role.adapter_author": "ec97150c54fea267f8745e69a358c60d090b827b1581d691ec955b961cefc8fb",
+      "role.coordinator": "151649bb59d963d4278a9a7cfaac8da68db20e33dddcc92b20023f1735b65f12",
+      "role.evaluation_designer": "0a8fbd63b1873eb7cfb050127bbb07236dcf9f20960a4fd0bc652a4e61be98e7",
+      "role.evidence_reviewer": "0082502318c2c7e2cf06eede4ec53362bfdb4a2cab163bb1c24b8c7731ac2dc6",
+      "role.executor": "075789e10b024972ea50d4dec44fe885e8b52787446977d75f3e96c0c020dca3",
+      "role.improver": "fd3bc55e2e8fc19acd52a24ac3fb670ae605d9abe3863e3b996d6875de056888",
+      "role.planner": "42b2ffe0c9e0762ee89590e74f4bf99567572bed52b89cf7464f6c1111bd581a",
+      "role.researcher": "ef4085150c9c7d4ac61a84515a2b2e18302f099fbce8704ccb3bd03557b6ea97",
+      "role.skill_author": "3dbc9911738b668f78d47d4ca3cacca827e114597b55b9980ee2e4a52846e91b",
+      "role.verifier": "d1117b3294672a39536bb14a168c0ea4379a921a9d3eaf22e9d5c4bdf484e820"
+    }
+  },
+  "schema_version": 1,
+  "strategies": {
+    "memory_retrieval@word-bigram-routed": "bf8a3e536ec0cf08105ba81bac45b6be55695c1aaf460af16914bc975e74a397"
+  },
+  "workflows": {
+    "module_collaboration@1": "24c2dd42888cf9b39b3e61e636cbac59e87574373651d18567a439266bce9be2"
+  }
+}

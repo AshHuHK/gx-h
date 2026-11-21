@@ -1,0 +1,291 @@
+{
+  "role.adapter_author": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Implements and documents an adapter and its known-answer checks.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "adapter_author",
+        "role_id": "role.adapter_author",
+        "task_class": "AUTHORING",
+        "title": "GX role adapter_author",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "default_effort": "xhigh",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "ec97150c54fea267f8745e69a358c60d090b827b1581d691ec955b961cefc8fb"
+  },
+  "role.coordinator": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Coordinates a run, assigns ready tasks to native workers and records the final handoff decision.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "coordinator",
+        "role_id": "role.coordinator",
+        "task_class": "PLANNING",
+        "title": "GX role coordinator",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "ultra"
+      ],
+      "default_effort": "ultra",
+      "model": "gpt-6.1-sol",
+      "worker_models": {
+        "gpt-6.1-sol": "gpt-6.1-sol"
+      }
+    },
+    "sha256": "151649bb59d963d4278a9a7cfaac8da68db20e33dddcc92b20023f1735b65f12"
+  },
+  "role.evaluation_designer": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Defines criteria, test cases and boundary conditions for a deliverable.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "evaluation_designer",
+        "role_id": "role.evaluation_designer",
+        "task_class": "PLANNING",
+        "title": "GX role evaluation_designer",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "ultra"
+      ],
+      "default_effort": "ultra",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "0a8fbd63b1873eb7cfb050127bbb07236dcf9f20960a4fd0bc652a4e61be98e7"
+  },
+  "role.evidence_reviewer": {
+    "intent": {
+      "instructions": "Preserve original references and distinguish direct observations from interpretations.\nWhen a cited source is unavailable, record what could not be checked.",
+      "manifest": {
+        "description": "Checks that a claim follows from the cited source and records discrepancies under its own lease.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "evidence_reviewer",
+        "role_id": "role.evidence_reviewer",
+        "task_class": "VERIFICATION",
+        "title": "GX role evidence_reviewer",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "ultra"
+      ],
+      "default_effort": "ultra",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "0082502318c2c7e2cf06eede4ec53362bfdb4a2cab163bb1c24b8c7731ac2dc6"
+  },
+  "role.executor": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Executes assigned work and publishes the corresponding outputs and job references.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "executor",
+        "role_id": "role.executor",
+        "task_class": "EXECUTION",
+        "title": "GX role executor",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "default_effort": "xhigh",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "075789e10b024972ea50d4dec44fe885e8b52787446977d75f3e96c0c020dca3"
+  },
+  "role.improver": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Proposes a scoped change and a comparison that can evaluate it.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "improver",
+        "role_id": "role.improver",
+        "task_class": "PLANNING",
+        "title": "GX role improver",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "ultra"
+      ],
+      "default_effort": "ultra",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "fd3bc55e2e8fc19acd52a24ac3fb670ae605d9abe3863e3b996d6875de056888"
+  },
+  "role.planner": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Divides a module into verifiable work items, then synthesizes the accepted results and unresolved gaps.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "planner",
+        "role_id": "role.planner",
+        "task_class": "PLANNING",
+        "title": "GX role planner",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "ultra"
+      ],
+      "default_effort": "ultra",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "42b2ffe0c9e0762ee89590e74f4bf99567572bed52b89cf7464f6c1111bd581a"
+  },
+  "role.researcher": {
+    "intent": {
+      "instructions": "Preserve original references and distinguish direct observations from interpretations.\nWhen a cited source is unavailable, record what could not be checked.",
+      "manifest": {
+        "description": "Investigates a question using the assigned inputs, preserves source references, and records limitations.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "researcher",
+        "role_id": "role.researcher",
+        "task_class": "PLANNING",
+        "title": "GX role researcher",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "ultra"
+      ],
+      "default_effort": "ultra",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "ef4085150c9c7d4ac61a84515a2b2e18302f099fbce8704ccb3bd03557b6ea97"
+  },
+  "role.skill_author": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Writes a reusable task procedure with examples and checks.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "skill_author",
+        "role_id": "role.skill_author",
+        "task_class": "AUTHORING",
+        "title": "GX role skill_author",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "default_effort": "xhigh",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "3dbc9911738b668f78d47d4ca3cacca827e114597b55b9980ee2e4a52846e91b"
+  },
+  "role.verifier": {
+    "intent": {
+      "instructions": "",
+      "manifest": {
+        "description": "Independently checks another worker's deliverable against its criteria.",
+        "hosts": [
+          "codex"
+        ],
+        "role": "verifier",
+        "role_id": "role.verifier",
+        "task_class": "VERIFICATION",
+        "title": "GX role verifier",
+        "version": "shipped-gx-native-v1"
+      },
+      "may_not_use": [
+        "WebFetch",
+        "WebSearch"
+      ]
+    },
+    "requirement": {
+      "allowed_efforts": [
+        "ultra"
+      ],
+      "default_effort": "ultra",
+      "model": "gpt-6.1-sol"
+    },
+    "sha256": "d1117b3294672a39536bb14a168c0ea4379a921a9d3eaf22e9d5c4bdf484e820"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "gpt-6.2-astra": {
+    "role.adapter_author": "c77f35e5d4a0027407a5ed323711f51d53992c7146966d6b7c87a570ff74dabf",
+    "role.coordinator": "adbfc0f0afcae1100e7c99e14194d095db4a7e599a3eca769e148111fb7c39b4",
+    "role.evaluation_designer": "5dfa498a8d73ff43fc5c894622bdcec53d99a294f9af33763eae05bde21154ae",
+    "role.evidence_reviewer": "dd865dfd88066384dac913bdbacf5a13373ebf8a054a72452554c930f7c9ad55",
+    "role.executor": "eb1d5bdcc51a589993ec6154b060428c1ed014f12d1725c3836ef6fa0bdff609",
+    "role.improver": "d829cee90012adea41984a7bc687d214121c4b13fa9bd4ca2cccf7fd3cfc5879",
+    "role.planner": "2de8bbf81dabc621974a1d4dd859ccc4bfa413dbdffd2ad75c487bac0d0eb8fd",
+    "role.researcher": "0e7424c6b271738b574feee1458f13ef4454749a9c1922252098a84d148a629f",
+    "role.skill_author": "96edf3f0b68c90b813846274a4900dc7cf0d254434d182ae9cb987c86bcb8f43",
+    "role.verifier": "eb59874e6046af5965c02ff3bc5274618d98c2c3d2497dc7a13acc1bbb0c25fe"
+  },
+  "worker_effort_floors": {
+    "max": {
+      "gpt-6.1-sol": {
+        "role.adapter_author": "5a08a4353776a57376ed2465edc6a554f3c84fafefbb4ea90c2f88f1e390c5e6",
+        "role.executor": "f38899e42a2cf8dd86545f84526634e97e2c4b30a228d5fb4616b0a5963739e0",
+        "role.skill_author": "8310c3f163cf44df0c12a10627bbe42a27d31aa2be6fe5d8c3e74e6162958f85"
+      },
+      "gpt-6.2-astra": {
+        "role.adapter_author": "42e9da2b5b652f7aff5f506f9fa2d269634ee90c96e4ddff480f3bad47a1c081",
+        "role.executor": "fff74fb2ea5b9f90ee83a067f6ab2b5d616ef5075c73a4c29d0c23c1bdaf6459",
+        "role.skill_author": "67825f9aa8f9db3f0bfc5c50116a66ff6fe8d7a34c2a610a880a3573afcde380"
+      }
+    }
+  }
+}
